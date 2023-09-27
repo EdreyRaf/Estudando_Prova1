@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int V[8] = {-4, 0, 5, 10, -20, 40, 100, 30};
+	int soma = V[0] + V[2] + V[4];
+int main (){
+	printf ("%d", soma);
+	V[5] = -V[5];
+	printf ("\n%d", V[5]);
+	return (0);
+}
