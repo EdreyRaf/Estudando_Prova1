@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+int a = 1;
+int main (){
+	while (a<28){
+	a=a+3;
+	printf("\n%d", a);
+	}
+	return (0);
+}
