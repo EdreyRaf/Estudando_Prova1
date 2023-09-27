@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int a, b;
+int main (){
+	printf("Digite um numero para começarmos: ");
+	scanf("%d", &a);
+	while((a+1)%10!=0){
+		a++;
+		if(a%3!=0)
+		printf("\n%d", a);
+		}	
+	return (0);
+}
