@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int cont;
+float dig;
+float soma=0;
+int main (){
+	printf("digite numeros reais diferentes de 0: ");
+	while(1){
+		printf("digite: ");
+		scanf("%f",  &dig);
+		
+		if(dig==0){
+		break;
+		} cont++;
+		soma += dig;
+		}	
+		float media = soma / cont;
+		printf("Foram digitados %d números.\n", cont);
+        printf("A média dos números digitados é: %.2lf\n", media);
+	return (0);
