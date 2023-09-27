@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+
+int a=1;
+int main (){
+	while(a<6){
+		int b = 6-a;
+		printf("\n%d   %d", a,  b);
+		a++;
+	} 
+	return (0);
+}
