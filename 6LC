@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <conio.h>
+
+int a, b;
+int main (){
+	char s='s';
+	printf("Digite 1 SOMA 2 SUB 3 MULT 4 DIV: ");
+	scanf("%d", &a);
+	
+	switch(a){
+		case 1:
+			printf("Digite dos numeros:");
+				scanf("\n%d %d", &a, &b);
+				printf("%d + %d = %d", a, b, a+b);
+    			break;
+		case 2:
+			printf("Digite dos numeros:");
+				scanf("\n%d %d", &a, &b);
+				printf("%d - %d = %d", a, b, a-b);
+				break;
+		case(3):
+			printf("Digite dos numeros:");
+				scanf("\n%d %d", &a, &b);
+				printf("%d * %d = %d", a, b, a*b);
+				break;
+		case(4):
+			printf("Digite dos numeros:");
+				scanf("\n%d %d", &a, &b);
+				printf("%d / %d = %d", a, b, a/b);
+				break;
+				
+		default:
+		printf("Digite dos numeros:");
+		}
+		
+	return (0);
+}
