@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int a, b;
+int main (){
+	printf("Digite um numero para começarmos: ");
+	scanf("%d", &a);
+	system("cls");
+	do {
+		printf("Descubra o numero escolhido: ");
+		scanf("%d", &b);
+	}while(a!=b);
+	printf("Acertou miseravi");
+	
+	return (0);
+}
