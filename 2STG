@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+char nome[15];
+int main (){
+	printf("Digite seu nome: ");
+	gets(nome);
+	strlwr(nome);
+	puts(nome);
+	
+return(0);
+}
