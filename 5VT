@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+float v[4];
+float soma=0;
+float media;
+
+int main (){
+	for(int i=0; i<=3; i++){
+		printf("Digite a nota %d: ", i+1);
+		scanf("%f", &v[i]);
+		soma += v[i];
+		}
+		media = soma/4;
+		if(media>=7){
+			printf("Aprovado com media %2.f", media);
+		} else if(media>=2&&media<7){
+			printf("Direcionado a fazer FINAL com media %.2f", media);
+		} else {
+			printf("Reprovado com media %.2f", media);
+		}
+return(0);
+}
