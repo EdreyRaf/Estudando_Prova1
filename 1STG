@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+char nome[15];
+char sobrenome [30];
+char endereco [30];
+char telefone [10];
+char idade [3];
+char nome_comp[45];
+int main (){
+	printf("Digite seu nome: ");
+	gets(nome);
+	printf("Digite seu sobrenome: ");
+	gets(sobrenome);
+	printf("Digite seu endereco: ");
+	gets(endereco);
+	printf("Digite seu telefone: ");
+	gets(telefone);
+	printf("Digite seu idade: ");
+	gets(idade);
+	
+	strcpy(nome_comp, nome);
+	strcat(nome_comp, sobrenome);
+	
+	puts(nome_comp);
+	puts(endereco);
+	puts(telefone);
+	puts(idade);
+return(0);
+}
