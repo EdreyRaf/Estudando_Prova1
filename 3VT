@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int cont=0, maior;
+int V[7];
+int main (){
+	for(int i=0;i<=6; i++){
+		printf("Digite os valores: ");
+		scanf("%d", &V[i]);
+	}
+	maior = V[0];
+	for(int i=0;i<=6; i++){
+		if (maior < V[i]){
+			maior = V[i];
+			cont = i;
+		}
+		}
+	for(int i=0;i<=6; i++){
+		printf("%d  ", V[i]);
+		}	
+	printf("\nO maior vetor eh %d", maior);
+	printf("\nSua posicao é V[%d]", cont);
+}
